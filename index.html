@@ -13,14 +13,51 @@
     <div class="containerborder">
 
         <div class="row bg-light pt-2 pb-2 upperrow">  
-            <div class=" col-2 d-flex align-left"> 
+            <div class=" col-sm-12 col-md-5 col-lg-2 d-flex align-left"> 
                 <i class="fa-brands fa-instagram fa-2x insta-logostyle"></i> <h3> Instagram </h3> 
             </div>
-            <div class=" col-7 d-flex justify-content-start"> </div>
-            <div class=" col-2 d-flex justify-content-end px-0"> 
-                <button type="button" class="btn btn-success btn-custom">Create a new post</button>
+            <div class=" col-sm-12 col-md-1 col-lg-7 d-flex justify-content-start"> </div>
+            <div class=" col-sm-10 col-md-5 col-lg-2 d-flex justify-content-end px-0">
+                 
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success btn-custom" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel"><b>Create a new post</b></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <b>Caption:</b>
+
+                                <div class="form-floating textbox">
+                                    <textarea class="form-control" placeholder="Leave a comment here"
+                                        id="floatingTextarea"></textarea>
+                                    <label for="floatingTextarea ">Add the caption of your post here</label>
+                                </div>
+
+                                <button type="button" class="btn btn-light "> <i class="fa-solid fa-camera"></i> </button>
+                                <button type="button" class="btn btn-light"> <i class="fa-solid fa-location-dot"></i> </button>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            <div class=" col-1 d-flex justify-content-start"> 
+            <div class=" col-sm-2 col-md-1 col-lg-1 d-flex justify-content-start"> 
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-gear"></i>
@@ -36,15 +73,16 @@
         </div>
 
         <div class="row py-3 pt-4">
-            
+            <!-- Nav pills -->
             <ul class="nav nav-pills mb-3 botones-feed-post" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-table-cells fa-lg" style="color:#938f91;"></i></button>
+                <li class="nav-item navegacion" role="presentation">
+                  <button class="btn" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-table-cells icono-navega fa-lg" style="color:#938f91;"></i></button>
                 </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square fa-lg" style="color:#938f91;"></i></button>
+                <li class="nav-item navegacion" role="presentation">
+                  <button class="btn" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square icono-navega fa-lg" style="color:#938f91;"></i></button>
                 </li>
             </ul>
+            <!-- Tab panes -->
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
@@ -93,9 +131,9 @@
 
                         <div class=" col-6 nav-area border">
                             <div class="row my-2">
-                                <div class=" col-6"> <h3> A flower for you!</h3> </div>
-                                <div class=" col-5"> </div>
-                                <div class=" col-1 icono-tres-puntos"> <i class="fa-solid fa-ellipsis-vertical fa-2xl px-0"></i> </div>
+                                <div class=" col-sm-7 col-md-7 col-lg-6"> <h3> A flower for you!</h3> </div>
+                                <div class=" col-sm-1 col-md-2 col-lg-5"> </div>
+                                <div class=" col-sm-4 col-md-3 col-lg-1 icono-tres-puntos"> <i class="fa-solid fa-ellipsis-vertical fa-2xl px-0"></i> </div>
                             </div>
                             <div class="row">
                                 <img class="single-photo" src="https://i.pinimg.com/564x/f7/62/4e/f7624ef89e7bc706cd406bb5defbaafd.jpg"></img>
@@ -307,7 +345,6 @@
             </div>
             
         </div>
-
 
     </div>
     
